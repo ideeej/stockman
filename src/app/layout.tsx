@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Nav from "@/Components/Nav";
+import SearchBar from "@/Components/SearchBar";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,9 +29,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`
+          ${geistSans.variable} ${geistMono.variable} antialiased
+          flex-col
+        `}
       >
+        <SearchBar />
         {children}
+        <Nav />
+        <footer className="p-4 text-center">
+          Feito por Jedi C:
+        </footer>
       </body>
     </html>
   );
