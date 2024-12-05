@@ -28,18 +28,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`
-          ${geistSans.variable} ${geistMono.variable} antialiased
-          flex-col
-        `}
-      >
-        <SearchBar />
-        {children}
-        <Nav />
-        <footer className="p-4 text-center">
-          Feito por Jedi C:
-        </footer>
+      <body className="">
+        <Nav/>
       </body>
     </html>
   );

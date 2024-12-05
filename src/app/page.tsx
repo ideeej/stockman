@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <main className="flex-col ">
-        <section className="">
+        <section className="h-[75vh]">
           Main Page
         </section>
       </main>
